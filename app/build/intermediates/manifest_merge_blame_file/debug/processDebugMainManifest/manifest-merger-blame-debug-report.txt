@@ -1,0 +1,263 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kquantum.nativeapp"
+4    android:versionCode="1"
+5    android:versionName="2.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Network permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:7:22-76
+14
+15    <!-- Billing permission -->
+16    <uses-permission android:name="com.android.vending.BILLING" />
+16-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:10:5-67
+16-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:10:22-64
+17
+18    <!-- SceneView requires OpenGLES 3.0 or later for 3D rendering. -->
+19    <uses-feature
+19-->[io.github.sceneview:sceneview:2.2.1] /Users/eunmin/.gradle/caches/transforms-4/16046dcc618c1ec8e017312b70ad799f/transformed/sceneview-2.2.1/AndroidManifest.xml:11:5-13:35
+20        android:glEsVersion="0x00030000"
+20-->[io.github.sceneview:sceneview:2.2.1] /Users/eunmin/.gradle/caches/transforms-4/16046dcc618c1ec8e017312b70ad799f/transformed/sceneview-2.2.1/AndroidManifest.xml:12:9-41
+21        android:required="true" />
+21-->[io.github.sceneview:sceneview:2.2.1] /Users/eunmin/.gradle/caches/transforms-4/16046dcc618c1ec8e017312b70ad799f/transformed/sceneview-2.2.1/AndroidManifest.xml:13:9-32
+22
+23    <queries>
+23-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:12:5-16:15
+24        <intent>
+24-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:13:9-15:18
+25            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+25-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:14:13-91
+25-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:14:21-88
+26        </intent>
+27    </queries>
+28
+29    <permission
+29-->[androidx.core:core:1.13.1] /Users/eunmin/.gradle/caches/transforms-4/c4391e113dae04e790c7ff2152c83959/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+30        android:name="com.kquantum.nativeapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.13.1] /Users/eunmin/.gradle/caches/transforms-4/c4391e113dae04e790c7ff2152c83959/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.13.1] /Users/eunmin/.gradle/caches/transforms-4/c4391e113dae04e790c7ff2152c83959/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.kquantum.nativeapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.13.1] /Users/eunmin/.gradle/caches/transforms-4/c4391e113dae04e790c7ff2152c83959/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.13.1] /Users/eunmin/.gradle/caches/transforms-4/c4391e113dae04e790c7ff2152c83959/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:12:5-36:19
+36        android:name="com.kquantum.nativeapp.KQuantumNativeApp"
+36-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:13:9-42
+37        android:allowBackup="true"
+37-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:14:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.13.1] /Users/eunmin/.gradle/caches/transforms-4/c4391e113dae04e790c7ff2152c83959/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+39        android:dataExtractionRules="@xml/data_extraction_rules"
+39-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:15:9-65
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:fullBackupContent="@xml/backup_rules"
+42-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:16:9-54
+43        android:icon="@mipmap/ic_launcher"
+43-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:17:9-43
+44        android:label="@string/app_name"
+44-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:18:9-41
+45        android:localeConfig="@xml/locales_config"
+45-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:22:9-51
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:19:9-54
+47        android:supportsRtl="true"
+47-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:20:9-35
+48        android:theme="@style/Theme.KQuantumNative" >
+48-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:21:9-52
+49        <activity
+49-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:25:9-35:20
+50            android:name="com.kquantum.nativeapp.MainActivity"
+50-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:26:13-41
+51            android:exported="true"
+51-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:27:13-36
+52            android:label="@string/app_name"
+52-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:28:13-45
+53            android:theme="@style/Theme.KQuantumNative"
+53-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:29:13-56
+54            android:windowSoftInputMode="adjustResize" >
+54-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:30:13-55
+55            <intent-filter>
+55-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:31:13-34:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:32:17-69
+56-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:32:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:33:17-77
+58-->/Users/eunmin/Desktop/WORK/K-QuantumNative/app/src/main/AndroidManifest.xml:33:27-74
+59            </intent-filter>
+60        </activity>
+61
+62        <meta-data
+62-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:19:9-21:37
+63            android:name="com.google.android.play.billingclient.version"
+63-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:20:13-73
+64            android:value="7.0.0" />
+64-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:21:13-34
+65
+66        <activity
+66-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:23:9-27:75
+67            android:name="com.android.billingclient.api.ProxyBillingActivity"
+67-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:24:13-78
+68            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+68-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:25:13-96
+69            android:exported="false"
+69-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:26:13-37
+70            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+70-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:27:13-72
+71        <activity
+71-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:28:9-32:75
+72            android:name="com.android.billingclient.api.ProxyBillingActivityV2"
+72-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:29:13-80
+73            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+73-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:30:13-96
+74            android:exported="false"
+74-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:31:13-37
+75            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+75-->[com.android.billingclient:billing:7.0.0] /Users/eunmin/.gradle/caches/transforms-4/363ea73c20434fa833a99179e85c5597/transformed/billing-7.0.0/AndroidManifest.xml:32:13-72
+76        <activity
+76-->[com.google.android.gms:play-services-base:18.3.0] /Users/eunmin/.gradle/caches/transforms-4/6bef72e57689c4d7c940a5ae3d36a96a/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+77            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+77-->[com.google.android.gms:play-services-base:18.3.0] /Users/eunmin/.gradle/caches/transforms-4/6bef72e57689c4d7c940a5ae3d36a96a/transformed/play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-base:18.3.0] /Users/eunmin/.gradle/caches/transforms-4/6bef72e57689c4d7c940a5ae3d36a96a/transformed/play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-base:18.3.0] /Users/eunmin/.gradle/caches/transforms-4/6bef72e57689c4d7c940a5ae3d36a96a/transformed/play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:18.3.0] /Users/eunmin/.gradle/caches/transforms-4/052e34dddec6f474ac9d3734d19dc935/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:18.3.0] /Users/eunmin/.gradle/caches/transforms-4/052e34dddec6f474ac9d3734d19dc935/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:18.3.0] /Users/eunmin/.gradle/caches/transforms-4/052e34dddec6f474ac9d3734d19dc935/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.3.0] /Users/eunmin/.gradle/caches/transforms-4/d3526e7a9929010cea3275a42e9c6463/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.3.0] /Users/eunmin/.gradle/caches/transforms-4/d3526e7a9929010cea3275a42e9c6463/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+87            android:authorities="com.kquantum.nativeapp.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.3.0] /Users/eunmin/.gradle/caches/transforms-4/d3526e7a9929010cea3275a42e9c6463/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.3.0] /Users/eunmin/.gradle/caches/transforms-4/d3526e7a9929010cea3275a42e9c6463/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.3.0] /Users/eunmin/.gradle/caches/transforms-4/d3526e7a9929010cea3275a42e9c6463/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.3.0] /Users/eunmin/.gradle/caches/transforms-4/d3526e7a9929010cea3275a42e9c6463/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.3.0] /Users/eunmin/.gradle/caches/transforms-4/d3526e7a9929010cea3275a42e9c6463/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.8.4] /Users/eunmin/.gradle/caches/transforms-4/e13db94202a6985c6799d065d88f4a4f/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.8.4] /Users/eunmin/.gradle/caches/transforms-4/e13db94202a6985c6799d065d88f4a4f/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:30:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.8.4] /Users/eunmin/.gradle/caches/transforms-4/e13db94202a6985c6799d065d88f4a4f/transformed/lifecycle-process-2.8.4/AndroidManifest.xml:31:17-49
+95            <meta-data
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+97                android:value="androidx.startup" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+98        </provider>
+99
+100        <activity
+100-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/eunmin/.gradle/caches/transforms-4/9277cd85fd3ca52eea2f1ebf92bec31e/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:23:9-25:39
+101            android:name="androidx.activity.ComponentActivity"
+101-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/eunmin/.gradle/caches/transforms-4/9277cd85fd3ca52eea2f1ebf92bec31e/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:24:13-63
+102            android:exported="true" />
+102-->[androidx.compose.ui:ui-test-manifest:1.6.8] /Users/eunmin/.gradle/caches/transforms-4/9277cd85fd3ca52eea2f1ebf92bec31e/transformed/ui-test-manifest-1.6.8/AndroidManifest.xml:25:13-36
+103        <activity
+103-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/eunmin/.gradle/caches/transforms-4/4c4299dfcdeb43b3a6fc95aea7b0bc13/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+104            android:name="androidx.compose.ui.tooling.PreviewActivity"
+104-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/eunmin/.gradle/caches/transforms-4/4c4299dfcdeb43b3a6fc95aea7b0bc13/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+105            android:exported="true" />
+105-->[androidx.compose.ui:ui-tooling-android:1.6.8] /Users/eunmin/.gradle/caches/transforms-4/4c4299dfcdeb43b3a6fc95aea7b0bc13/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+106
+107        <service
+107-->[androidx.room:room-runtime:2.6.1] /Users/eunmin/.gradle/caches/transforms-4/ef86ca46c846b0ba1d14209c85f2c361/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+108            android:name="androidx.room.MultiInstanceInvalidationService"
+108-->[androidx.room:room-runtime:2.6.1] /Users/eunmin/.gradle/caches/transforms-4/ef86ca46c846b0ba1d14209c85f2c361/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+109            android:directBootAware="true"
+109-->[androidx.room:room-runtime:2.6.1] /Users/eunmin/.gradle/caches/transforms-4/ef86ca46c846b0ba1d14209c85f2c361/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+110            android:exported="false" />
+110-->[androidx.room:room-runtime:2.6.1] /Users/eunmin/.gradle/caches/transforms-4/ef86ca46c846b0ba1d14209c85f2c361/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+111        <service
+111-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/d8402a2387463f0b79619ea84211ff52/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+112            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+112-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/d8402a2387463f0b79619ea84211ff52/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+113            android:exported="false" >
+113-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/d8402a2387463f0b79619ea84211ff52/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+114            <meta-data
+114-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/d8402a2387463f0b79619ea84211ff52/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+115                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+115-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/d8402a2387463f0b79619ea84211ff52/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+116                android:value="cct" />
+116-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/d8402a2387463f0b79619ea84211ff52/transformed/transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+117        </service>
+118        <service
+118-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/cfb19596fc1341678bb60fdab1bd1af7/transformed/transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+119            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+119-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/cfb19596fc1341678bb60fdab1bd1af7/transformed/transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+120            android:exported="false"
+120-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/cfb19596fc1341678bb60fdab1bd1af7/transformed/transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+121            android:permission="android.permission.BIND_JOB_SERVICE" >
+121-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/cfb19596fc1341678bb60fdab1bd1af7/transformed/transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+122        </service>
+123
+124        <receiver
+124-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/cfb19596fc1341678bb60fdab1bd1af7/transformed/transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+125            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+125-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/cfb19596fc1341678bb60fdab1bd1af7/transformed/transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+126            android:exported="false" />
+126-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/eunmin/.gradle/caches/transforms-4/cfb19596fc1341678bb60fdab1bd1af7/transformed/transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+127        <receiver
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+128            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+129            android:directBootAware="false"
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+130            android:enabled="true"
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+131            android:exported="true"
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+132            android:permission="android.permission.DUMP" >
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+134                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+135            </intent-filter>
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+137                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+138            </intent-filter>
+139            <intent-filter>
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+140                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+141            </intent-filter>
+142            <intent-filter>
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+143                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/eunmin/.gradle/caches/transforms-4/acdfea6f8122d84914505a56f1695ace/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+144            </intent-filter>
+145        </receiver>
+146    </application>
+147
+148</manifest>
